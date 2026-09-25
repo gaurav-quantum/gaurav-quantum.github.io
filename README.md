@@ -9,7 +9,7 @@ A lightweight, responsive, no-build static website designed for free hosting on 
 2. Upload the contents of this folder (`index.html`, `styles.css`, `script.js`, and `assets/`).
 3. In GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**.
 4. Select `main` and `/ (root)`.
-5. GitHub will publish the site at `https://gaurav-saxena.github.io/`.
+5. GitHub will publish the site at `https://gaurav-quantum.github.io/`.
 
 ### Option B — use any repository
 Upload the files to a repository and select the relevant branch/folder under **Settings → Pages**. The URL will normally be `https://gaurav-saxena.github.io/<repository-name>/`.
