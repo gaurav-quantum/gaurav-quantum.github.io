@@ -5,7 +5,7 @@ A lightweight, responsive, no-build static website designed for free hosting on 
 ## Publish on GitHub Pages
 
 ### Option A — create a dedicated user site
-1. Create a public repository named `gaurav-saxena.github.io`.
+1. Create a public repository named `gaurav-quantum.github.io`.
 2. Upload the contents of this folder (`index.html`, `styles.css`, `script.js`, and `assets/`).
 3. In GitHub: **Settings → Pages → Build and deployment → Deploy from a branch**.
 4. Select `main` and `/ (root)`.
