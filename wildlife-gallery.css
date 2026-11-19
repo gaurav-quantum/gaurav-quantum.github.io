@@ -1,0 +1,31 @@
+/* Wildlife gallery, scoped to avoid changing the rest of the website. */
+.wildlife-filters{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}
+.wildlife-filters[hidden],.wildlife-empty[hidden],.wildlife-view-caption[hidden]{display:none}
+.wildlife-filters button{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:9px 18px;border:1px solid #cacac1;border-radius:999px;background:transparent;color:var(--ink);font:600 14px var(--sans);cursor:pointer}
+.wildlife-filters button:hover{border-color:var(--accent);color:var(--accent)}
+.wildlife-filters button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.wildlife-filters button span{font-size:11px;opacity:.7}
+.wildlife-status{color:var(--muted);font-size:13px;margin:0 0 24px}
+.wildlife-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px;align-items:start}
+.wildlife-card{margin:0;min-width:0}
+.wildlife-photo{display:block;width:100%;padding:0;border:0;border-radius:12px;overflow:hidden;background:#dcded4;cursor:zoom-in}
+.wildlife-photo img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:contain}
+.wildlife-card figcaption{padding:14px 2px 0}
+.wildlife-card h3{font:600 16px/1.4 var(--sans);margin:0}
+.wildlife-caption{font-size:15px;line-height:1.65;color:#51514d;white-space:pre-wrap;overflow-wrap:anywhere;margin:8px 0 0}
+.wildlife-empty{padding:60px 24px;text-align:center;border:1px dashed #bcbeb3;border-radius:16px}
+.wildlife-empty>span{font-size:32px;color:var(--accent)}
+.wildlife-empty h3{font:600 24px var(--display);margin:12px 0}
+.wildlife-empty p{color:var(--muted)}
+.wildlife-dialog{box-sizing:border-box;width:min(1000px,94vw);max-height:94vh;max-height:94dvh;padding:16px;border:0;border-radius:16px;background:var(--paper);color:var(--ink)}
+.wildlife-dialog::backdrop{background:rgba(10,14,12,.85)}
+.wildlife-full{display:block;width:100%;height:70vh;height:70dvh;object-fit:contain;background:#181c19;border-radius:8px}
+.wildlife-close{display:block;min-height:44px;margin:0 0 12px auto;border:1px solid var(--line);border-radius:99px;padding:8px 18px;background:var(--paper);color:var(--ink);font:600 14px var(--sans);cursor:pointer}
+.wildlife-close span{font-size:20px;margin-left:12px}
+.wildlife-view-info{padding:14px 4px 2px}
+.wildlife-view-info h3{margin:0;font:600 18px var(--sans)}
+.wildlife-view-caption{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.6;margin:8px 0 0}
+.wildlife-filters button:focus-visible,.wildlife-photo:focus-visible,.wildlife-close:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+body.wildlife-view-open{overflow:hidden}
+@media(max-width:850px){.wildlife-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.wildlife-grid{grid-template-columns:1fr;gap:28px}.wildlife-filters{gap:8px}.wildlife-filters button{padding:9px 14px}.wildlife-photo img{max-height:560px}.wildlife-dialog{padding:12px}.wildlife-full{height:64vh;height:64dvh}}
