@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="wildlife-gallery.css" />
 </head>
 <body class="personal-page">
   <div class="progress" aria-hidden="true"><span></span></div>
@@ -62,8 +63,17 @@
 
     <section class="section section-soft personal-section" id="wildlife">
       <div class="container">
-        <div class="personal-heading"><p class="eyebrow">02 / Wildlife</p><h2>Through my lens.</h2><p>A place for the birds and animals I have been lucky enough to photograph.</p></div>
-        <div class="gallery-empty"><span class="gallery-mark" aria-hidden="true">✳</span><p>Wildlife photographs coming soon.</p></div>
+        <div class="personal-heading"><p class="eyebrow">02 / Wildlife</p><h2>Through my lens.</h2><p>From garden visitors to encounters further afield, a collection of creatures that caught my eye.</p></div>
+        <div class="wildlife-filters" role="group" aria-label="Filter wildlife photographs" hidden></div>
+        <p class="wildlife-status" role="status" aria-live="polite"></p>
+        <div class="wildlife-grid" id="wildlife-gallery" aria-label="Wildlife photographs"></div>
+        <div class="wildlife-empty" hidden><span aria-hidden="true">↗</span><h3>Watching the skies.</h3><p>Bird photographs will find a home here soon.</p></div>
+        <noscript><p>Please enable JavaScript to browse the wildlife collection.</p></noscript>
+        <dialog class="wildlife-dialog" aria-labelledby="wildlife-view-title">
+          <button class="wildlife-close" type="button" autofocus>Close <span aria-hidden="true">×</span></button>
+          <img class="wildlife-full" alt="" />
+          <div class="wildlife-view-info"><h3 id="wildlife-view-title"></h3><p class="wildlife-view-caption" hidden></p></div>
+        </dialog>
       </div>
     </section>
 
@@ -238,5 +248,7 @@
   </main>
   <footer class="footer"><div class="container footer-inner"><div><strong>Gaurav Saxena</strong><span>Quantum Research Scientist</span></div><div class="footer-links"><a href="index.html">Research</a><a href="https://github.com/gaurav-quantum" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:gaurav.phy0403@gmail.com">Email</a></div><div class="footer-note">© <span id="year"></span> Gaurav Saxena</div></div></footer>
   <script src="script.js"></script>
+  <script src="wildlife-data.js"></script>
+  <script src="wildlife-gallery.js"></script>
 </body>
 </html>
