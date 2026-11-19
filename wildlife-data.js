@@ -16,7 +16,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/squirrels/IMG_4851.jpeg",
     "title": "Red-brown squirrel",
     "alt": "A red-brown squirrel eating on a wooden fence.",
-    "caption": ""
+    "caption": "Enjoying a light breakfast on a sunny morning"
   },
   {
     "id": "img-4454",
@@ -40,7 +40,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/animals/IMG_4915.jpeg",
     "title": "Lionesses",
     "alt": "Two lionesses resting together on a stone ledge.",
-    "caption": ""
+    "caption": "Sunkissed"
   },
   {
     "id": "img-4609",
@@ -48,7 +48,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/squirrels/IMG_4609.jpeg",
     "title": "Grey squirrel",
     "alt": "A grey squirrel with a curled bushy tail on a windowsill.",
-    "caption": ""
+    "caption": "The fluffy tail"
   },
   {
     "id": "img-4567",
@@ -72,7 +72,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/animals/IMG_4797.jpeg",
     "title": "Domestic cat",
     "alt": "A long-haired grey cat resting on an outdoor chair.",
-    "caption": ""
+    "caption": "Dare to stare!"
   },
   {
     "id": "img-4501",
@@ -80,7 +80,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/bugs/IMG_4501.jpeg",
     "title": "Moth",
     "alt": "A close view of a brown moth resting on glass.",
-    "caption": ""
+    "caption": "The hidden side of a moth"
   },
   {
     "id": "img-4514",
@@ -96,7 +96,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/animals/IMG_4923.jpeg",
     "title": "Lion",
     "alt": "A male lion lying asleep on the grass.",
-    "caption": ""
+    "caption": "The napping king"
   },
   {
     "id": "img-4569",
@@ -104,7 +104,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/bugs/IMG_4569.jpeg",
     "title": "Red-and-black bug",
     "alt": "A red-and-black insect on a wet surface.",
-    "caption": ""
+    "caption": "Using surface tension to walk on water"
   },
   {
     "id": "img-4699",
@@ -112,7 +112,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/squirrels/IMG_4699.jpeg",
     "title": "Black squirrel",
     "alt": "A black squirrel stretched out along a wooden fence.",
-    "caption": ""
+    "caption": "Tummy rest is best"
   },
   {
     "id": "img-4856",
@@ -136,7 +136,7 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/squirrels/IMG_4523.jpeg",
     "title": "Black squirrel",
     "alt": "A black squirrel scratching while sitting on a fence.",
-    "caption": ""
+    "caption": "A nice back scratch"
   },
   {
     "id": "img-4506",
@@ -152,14 +152,62 @@ window.wildlifePhotos = [
     "src": "assets/wildlife/squirrels/IMG_4695.jpeg",
     "title": "Black squirrel",
     "alt": "A wider view of a black squirrel reclining on a garden fence.",
-    "caption": ""
+    "caption": "Nothing is better than lying down"
   },
   {
     "id": "img-4458",
     "category": "bugs",
     "src": "assets/wildlife/bugs/IMG_4458.jpeg",
     "title": "Dragonfly",
-    "alt": "An orange dragonfly above a flowering garden plant.",
-    "caption": ""
-  }
+    "alt": "Dragonfly enjoying sunlight on basil flowers",
+    "caption": "Wings dispersing red at the right angle"
+  },
+  {
+    "id": "img-5064s",
+    "category": "squirrels",
+    "src": "assets/wildlife/squirrels/IMG_5064s.jpeg",
+    "title": "Black squirrel",
+    "alt": "Standing squirrel",
+    "caption": "Better view with standing"
+  },
+  {
+    "id": "img-5695s",
+    "category": "squirrels",
+    "src": "assets/wildlife/squirrels/IMG_5695s.jpeg",
+    "title": "Gray squirrel",
+    "alt": "Standing squirrel",
+    "caption": "Standing and wondering"
+  },
+  {
+    "id": "img-5266s",
+    "category": "squirrels",
+    "src": "assets/wildlife/squirrels/IMG_5266s.jpeg",
+    "title": "Baby squirrel",
+    "alt": "Hungry squirrel",
+    "caption": "Hungry?"
+  },
+  {
+    "id": "img-5095",
+    "category": "animals",
+    "src": "assets/wildlife/animals/IMG_5095.jpeg",
+    "title": "Snake",
+    "alt": "Snake",
+    "caption": "Beware! Beware!"
+  },
+  {
+    "id": "img-4944",
+    "category": "animals",
+    "src": "assets/wildlife/animals/IMG_4944.jpeg",
+    "title": "Rhino",
+    "alt": "Rhino",
+    "caption": "Am I really thirsty?"
+  },
+  {
+    "id": "img-5215",
+    "category": "bugs",
+    "src": "assets/wildlife/bugs/IMG_5215b.jpeg",
+    "title": "Ladybug",
+    "alt": "Ladybug on glass",
+    "caption": "The hidden side of a ladybug"
+  },
 ];
