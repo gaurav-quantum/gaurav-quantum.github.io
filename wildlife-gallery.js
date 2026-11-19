@@ -7,8 +7,9 @@
   const status = section.querySelector('.wildlife-status');
   const empty = section.querySelector('.wildlife-empty');
   const dialog = section.querySelector('.wildlife-dialog');
-  const categories = [['all', 'All photos'], ['squirrels', 'Squirrels'], ['bugs', 'Bugs'], ['animals', 'Animals'], ['birds', 'Birds'], ['fishes', 'Fishes']];
+  const categories = [['squirrels', 'Squirrels'], ['bugs', 'Bugs'], ['animals', 'Animals'], ['birds', 'Birds'], ['fishes', 'Fishes']];
   let opener;
+  let activeCategory = null;
 
   function openPhoto(photo, button) {
     opener = button;
@@ -24,7 +25,8 @@
   }
 
   function render(category) {
-    const selected = photos.filter(photo => category === 'all' || photo.category === category);
+    activeCategory = category;
+    const selected = photos.filter(photo => photo.category === category);
     filters.querySelectorAll('button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.category === category)));
     const fragment = document.createDocumentFragment();
     selected.forEach(photo => {
@@ -55,9 +57,13 @@
       fragment.append(card);
     });
     grid.replaceChildren(fragment);
-    empty.hidden = selected.length !== 0;
+    empty.hidden = category === null || selected.length !== 0;
+    if (category === null) {
+      status.textContent = 'Choose a category to explore. Click it again to hide the photographs.';
+      return;
+    }
     const label = categories.find(([id]) => id === category)[1];
-    status.textContent = `${selected.length} ${selected.length === 1 ? 'photograph' : 'photographs'}${category === 'all' ? '' : ' · ' + label} · Select a photo to view it larger.`;
+    status.textContent = `${selected.length} ${selected.length === 1 ? 'photograph' : 'photographs'} · ${label} · Click ${label} again to hide. Select a photo to view it larger.`;
   }
 
   categories.forEach(([id, label]) => {
@@ -67,9 +73,9 @@
     button.setAttribute('aria-controls', 'wildlife-gallery');
     button.append(document.createTextNode(label));
     const count = document.createElement('span');
-    count.textContent = photos.filter(photo => id === 'all' || photo.category === id).length;
+    count.textContent = photos.filter(photo => photo.category === id).length;
     button.append(count);
-    button.addEventListener('click', () => render(id));
+    button.addEventListener('click', () => render(activeCategory === id ? null : id));
     filters.append(button);
   });
   filters.hidden = false;
@@ -83,5 +89,5 @@
     document.body.classList.remove('wildlife-view-open');
     opener?.focus();
   });
-  render('all');
+  render(null);
 })();
